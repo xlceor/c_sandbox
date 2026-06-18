@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <dirent.h>
 
-int main()
+int main(int argc, char *argv[])
 {
     DIR *dir;
 
     struct dirent *entrada;
 
-    dir = opendir(".");
+    dir = opendir(argv[1]);
     if (dir == NULL)
     {
         perror("No se pudo acceder a la carpeta");
