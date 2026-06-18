@@ -9,7 +9,13 @@ int main(int argc, char *argv[])
 
     if(operator == '+'){
         printf("%i\n", (nums[1] + nums[2]));
-    } else if((int) nums[2] == '-'){
+    } else if(operator == '-'){
         printf("%i\n", (nums[1] - nums[2]));
+    } else if(operator == '*'){
+        printf("%i\n", (nums[1] * nums[2]));
+    } else if(operator == '/'){
+        printf("%i\n", (nums[1] / nums[2]));
+    } else if(operator == '%'){
+        printf("%i\n", (nums[1] % nums[2]));
     }
 }
